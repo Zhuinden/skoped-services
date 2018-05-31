@@ -46,6 +46,13 @@ and add the compile dependency to your module level gradle.
     compile 'com.github.Zhuinden:skoped-services:0.0.1'
 
 
+## Deployment memo
+
+```
+gradlew assemble 
+gradlew :skopedservices:publishMavenPublicationToMavenRepository
+```
+
 
 ## License
 

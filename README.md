@@ -32,19 +32,12 @@ class MyView: SomeView(@JvmOverloads...) {
 
 ## Using sKoped Services
 
-    buildscript {
-        repositories {
-            // ...
-            maven { url "https://jitpack.io" }
-        }
-        // ...
-    }
     allprojects {
         repositories {
-            // ...
-            maven { url "https://jitpack.io" }
+            maven {
+                url 'https://github.com/Zhuinden/skoped-services/raw/master/maven-repo'
+            }
         }
-        // ...
     }
 
 

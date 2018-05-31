@@ -1,7 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.github.dcendents.android-maven'
-
+//apply plugin: 'com.github.dcendents.android-maven' // disable Jitpack.
 
 android {
     compileSdkVersion 27
@@ -27,6 +26,12 @@ android {
         sourceCompatibility 1.8
     }
 }
+
+//noinspection GroovyAssignabilityCheck
+apply plugin: 'maven-publish'
+//noinspection GroovyAssignabilityCheck
+apply from: '../deploy.gradle'
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])

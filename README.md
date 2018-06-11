@@ -50,7 +50,7 @@ and add the compile dependency to your module level gradle.
 
 ```
 gradlew assemble 
-gradlew :skopedservices:publishMavenPublicationToMavenRepository
+gradlew :skoped-services:publishMavenPublicationToMavenRepository
 ```
 
 

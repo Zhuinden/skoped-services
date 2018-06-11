@@ -1,1 +1,1 @@
-include ':skopedservices', ':skopedservices-example'
+include ':skoped-services', ':skoped-services-example'

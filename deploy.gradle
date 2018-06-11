@@ -2,9 +2,9 @@ publishing {
     publications {
         maven(MavenPublication) {
             groupId 'com.github.zhuinden'
-            artifactId 'skopedservices'
-            version '0.0.3'
-            artifact source: file("${project.buildDir}/outputs/aar/skopedservices-release.aar")
+            artifactId 'skoped-services'
+            version '0.0.2'
+            artifact source: file("${project.buildDir}/outputs/aar/skoped-services-release.aar")
         }
     }
     repositories {

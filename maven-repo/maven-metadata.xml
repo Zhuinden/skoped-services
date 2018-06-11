@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>com.github.Zhuinden</groupId>
+  <groupId>com.github.zhuinden</groupId>
   <artifactId>skoped-services</artifactId>
   <versioning>
     <release>0.0.3</release>

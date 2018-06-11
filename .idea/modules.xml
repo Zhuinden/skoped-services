@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/scoped-services.iml" filepath="$PROJECT_DIR$/scoped-services.iml" />
-      <module fileurl="file://$PROJECT_DIR$/skopedservices/skopedservices.iml" filepath="$PROJECT_DIR$/skopedservices/skopedservices.iml" />
-      <module fileurl="file://$PROJECT_DIR$/skopedservices-example/skopedservices-example.iml" filepath="$PROJECT_DIR$/skopedservices-example/skopedservices-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skoped-services.iml" filepath="$PROJECT_DIR$/skoped-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skoped-services-example/skoped-services-example.iml" filepath="$PROJECT_DIR$/skoped-services-example/skoped-services-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skoped-services/skoped-services-skoped-services.iml" filepath="$PROJECT_DIR$/skoped-services/skoped-services-skoped-services.iml" />
     </modules>
   </component>
 </project>

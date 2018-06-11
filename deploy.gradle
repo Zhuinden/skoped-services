@@ -3,7 +3,7 @@ publishing {
         maven(MavenPublication) {
             groupId 'com.github.zhuinden'
             artifactId 'skoped-services'
-            version '0.0.2'
+            version '0.0.3'
             artifact source: file("${project.buildDir}/outputs/aar/skoped-services-release.aar")
         }
     }

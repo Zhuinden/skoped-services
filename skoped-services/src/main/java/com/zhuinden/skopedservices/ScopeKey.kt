@@ -46,7 +46,7 @@ fun Services.add(scopeKey: ScopeKey, serviceTag: String, service: Any) = add(sco
 
 fun <T> Services.remove(scopeKey: ScopeKey, serviceTag: String): T? = remove(scopeKey.scopeTag, serviceTag)
 
-fun Services.forEach(scopeKey: ScopeKey, action: (Any) -> Unit) = forEach(scopeKey.scopeTag, action)
+fun Services.forEach(scopeKey: ScopeKey, action: (Pair<String, Any>) -> Unit) = this.forEach(scopeKey.scopeTag, action)
 
 fun Services.destroy(scopeKey: ScopeKey) = destroy(scopeKey.scopeTag)
 

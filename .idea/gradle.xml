@@ -8,8 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/skopedservices" />
-            <option value="$PROJECT_DIR$/skopedservices-example" />
+            <option value="$PROJECT_DIR$/skoped-services" />
+            <option value="$PROJECT_DIR$/skoped-services-example" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

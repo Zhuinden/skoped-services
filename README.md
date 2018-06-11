@@ -43,7 +43,7 @@ class MyView: SomeView(@JvmOverloads...) {
 
 and add the compile dependency to your module level gradle.
 
-    compile 'com.github.Zhuinden:skoped-services:0.0.1'
+    compile 'com.github.Zhuinden:skoped-services:0.0.2'
 
 
 ## Deployment memo

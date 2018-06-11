@@ -19,13 +19,13 @@ class Services {
     private val services: MutableMap<String, MutableMap<String, Any>> = mutableMapOf()
 
     fun createIfAbsent(scopeTag: String, initializer: Services.() -> Unit) {
-        if(services.containsKey(scopeTag)) {
+        if (services.containsKey(scopeTag)) {
             return
         }
         initializer(this)
     }
 
-    val scopes : Set<String>
+    val scopes: Set<String>
         get() = setOf(*services.keys.toTypedArray())
 
     fun has(scopeTag: String, serviceTag: String) =
@@ -55,9 +55,10 @@ class Services {
         return scopeServices.remove(serviceTag) as T?
     }
 
-    fun forEach(scopeTag: String, action: (Any) -> Unit) {
-        services.takeIf { it.containsKey(scopeTag) }?.get(scopeTag)?.forEach(action)
-            ?: throw IllegalArgumentException("The specified scope [$scopeTag] does not exist!")
+    fun forEach(scopeTag: String, action: (Pair<String, Any>) -> Unit) {
+        services.takeIf { it.containsKey(scopeTag) }?.get(scopeTag)?.forEach {
+            action(it.key to it.value)
+        } ?: throw IllegalArgumentException("The specified scope [$scopeTag] does not exist!")
     }
 
     fun destroy(scopeTag: String) {
